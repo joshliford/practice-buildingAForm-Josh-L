@@ -7,5 +7,60 @@
 </head>
 <body>
     
+    <form>
+        <!-- Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <!-- Feedback Category -->
+        <label for="category">Feedback Category:</label>
+        <select id="category" name="category">
+            <option selected>General Feedback</option>
+            <option>Report a Problem</option>
+            <option>Positive Feedback</option>
+            <option>Negative Feedback</option>
+        </select>
+
+        <!-- Contact Method -->
+        <fieldset>
+            <legend>Preferred Contact Method:</legend>
+            <label for="email">
+                <input type="radio" id="email" name="contact" value="email" checked> Email
+            </label>
+            <label for="phone">
+                <input type="radio" id="phone" name="contact" value="phone"> Phone
+            </label>
+        </fieldset>
+
+        <!-- Additional Features -->
+        <fieldset>
+            <legend>Additional Features of Interest:</legend>
+            <label for="clear">
+                <input type="checkbox" id="clear" name="features" value="clear"> 'Clear' button to reset sections
+            </label>
+            <label for="theme">
+                <input type="checkbox" id="theme" name="features" value="theme"> Add a 'Dark Mode' theme
+            </label>
+            <label for="spelling">
+                <input type="checkbox" id="spelling" name="features" value="spelling"> Enable 'Spellcheck' for comments
+            </label>
+        </fieldset>
+
+        <!-- Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Write comments here"></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
 </body>
 </html>

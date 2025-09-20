@@ -6,6 +6,11 @@
     <title>Feedback Form</title>
 </head>
 <body>
+
+    <header>
+        <h1>Feedback Form</h1>
+        <h2>Please fill out the following:</h2>
+    </header>
     
     <form>
         <!-- Name Input -->
@@ -14,11 +19,11 @@
 
         <!-- Email Input -->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required><br>
 
         <!-- Password Input -->
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="8" required>
+        <input type="password" id="password" name="password" minlength="8" required><br>
 
         <!-- Feedback Category -->
         <label for="category">Feedback Category:</label>
@@ -56,11 +61,16 @@
 
         <!-- Comments -->
         <label for="comments">Additional Comments:</label>
-        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Write comments here"></textarea>
+        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Write feedback here"></textarea>
 
         <!-- Submit Button -->
         <input type="submit" value="Submit">
 
     </form>
+
+    <footer>
+		&copy; 2025 Josh Liford
+	</footer>
+
 </body>
 </html>

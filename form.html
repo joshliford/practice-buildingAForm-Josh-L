@@ -37,7 +37,6 @@
         input[type="radio"] {
             accent-color: black;
             background-color:rgb(233, 225, 225);
-
         }
 
         /* change color of checkbox buttons */
@@ -117,10 +116,11 @@
         <!-- Feedback Category -->
         <label for="category">Feedback Category:</label>
         <select id="category" name="category">
-            <option selected>General Feedback</option>
-            <option>Report a Problem</option>
-            <option>Positive Feedback</option>
-            <option>Negative Feedback</option>
+            <option value="" selected>Please select one...</option>
+            <option value="general-feedback">General Feedback</option>
+            <option value="report-a-problem">Report a Problem</option>
+            <option value="positive-feedback">Positive Feedback</option>
+            <option value="negative-feedback">Negative Feedback</option>
         </select>
 
         <!-- Contact Method -->
@@ -137,9 +137,6 @@
         <!-- Additional Features -->
         <fieldset>
             <legend>Additional Features of Interest:</legend>
-            <label for="clear">
-                <input type="checkbox" id="clear" name="features" value="clear"> 'Clear' button to reset sections
-            </label>
             <label for="theme">
                 <input type="checkbox" id="theme" name="features" value="theme"> Add a 'Dark Mode' theme
             </label>
